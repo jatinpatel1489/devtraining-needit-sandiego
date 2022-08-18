@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="6" type="collection">
+        <element label="Requested for" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element label="Requested for email" mandatory="true" max_length="160" name="u_requested_for_email" type="string"/>
+        <element label="When Needed" max_length="40" name="when_needed" type="glide_date_time"/>
+        <index name="index">
+            <element name="u_requested_for"/>
+        </index>
+    </element>
+</database>
